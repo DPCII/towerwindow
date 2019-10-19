@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="player"></div>
+
+    <script>
+          if (!window['YT']) {
+    var YT = {
+      loading: 0,
+      loaded: 0
+    };
+  }
+  if (!window['YTConfig']) {
+    var YTConfig = {
+      'host': 'http://www.youtube.com'
+    };
+  }
+  if (!YT.loading) {
+    YT.loading = 1;
+    (function () {
+      var l = [];
+      YT.ready = function (f) {
+        if (YT.loaded) {
+          f();
+        } else {
+          l.push(f);
+        }
+      };
+      window.onYTReady = function () {
+        YT.loaded = 1;
+        for (var i = 0; i < l.length; i++) {
+          try {
+            l[i]();
+          } catch (e) {}
+        }
+      };
+      YT.setConfig = function (c) {
+        for (var k in c) {
+          if (c.hasOwnProperty(k)) {
+            YTConfig[k] = c[k];
+          }
+        }
+      };
+      var a = document.createElement('script');
+      a.type = 'text/javascript';
+      a.id = 'www-widgetapi-script';
+      a.src = 'https://s.ytimg.com/yts/jsbin/www-widgetapi-vfloS5Wsk/www-widgetapi.js';
+      a.async = true;
+      var c = document.currentScript;
+      if (c) {
+        var n = c.nonce || c.getAttribute('nonce');
+        if (n) {
+          a.setAttribute('nonce', n);
+        }
+      }
+      var b = document.getElementsByTagName('script')[0];
+      b.parentNode.insertBefore(a, b);
+    })();
+  }
+  var player;
+
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: '0Bmhjf0rKe8',
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // autoplay video
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  // when video ends
+  function onPlayerStateChange(event) {
+    if (event.data === 0) {
+      let abc = document.getElementById('player')
+      abc.remove()
+    }
+  }    
+
+  // when video pauses
+  function onPlayerStateChange(event) {
+      if(event.data === 2) {
+        let abc = document.getElementById('player')
+        abc.remove()
+      }
+  }
+    
+    </script>
+    
+</body>
+</html>
