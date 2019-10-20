@@ -1,197 +1,170 @@
 import React, { useState } from 'react';
 import YouTube from 'react-youtube';
+import Vimeo from '@u-wave/react-vimeo';
+import Header from './components/Header';
+import SearchMenu from './components/SearchMenu'
+import styled from 'styled-components';
+import { useSpring, animated } from 'react-spring';
 import './App.css';
 
 function App() {
 
-  const [vid, setVid] = useState({ url: '0Bmhjf0rKe8' })
-  const [hide, setHide] = useState({ cover: false })
+  // state
+  const [{vid, player}, setVid] = useState({ 
+    vid: '',
+    player: ""
+  });
+  const [hide, setHide] = useState({ hide: false })
+  // state
 
-  let optionsForVideo =  {
-    height: '390',
-    width: '640',
-  }
+  // Handler for selecting option from Searchmenu
+  // const handleSearchSelection = (a, b) => setVid({vid: a, player: b})
+  const handleSearchSelection = (a, b) => setVid({vid: a, player: b})
+  //
 
-  function testOnReady(event) {
-    event.target.pauseVideo();
+  // React Spring for navmenu
+  const [navStatus, setNavStatus] = useState(false);
+  const cssPropsAnim = useSpring({
+    opacity: navStatus ? 1 : .5,
+    marginLeft: navStatus ? 0 : -1200
+  })
+
+  const handleNavClick = () => setNavStatus(a => !a)
+  // React Spring
+
+  
+  // start and stop functions
+  function playbackReady(event) {
+    // event.target.pauseVideo();
+    event.target.playVideo();
   }
-  function testOnEnd(event) {
+  function playbackEnd(event) {
     setVid('')
+    setNavStatus(a => !a)
   }
-  function testOnPause(event) {
+  // start and stop
+
+
+
+  // play state allows us to determine whether or not popup ads should be killed
+  function playbackPause(event) {
     togglePlayState()
-    console.log(hide)
   }
-  function testOnPlay(event) {
+  function playbackPlay(event) {
     togglePlayState()
-    console.log(hide)
   }
 
   function togglePlayState() {
     hide ? setHide(false) : setHide(true)
   }
+  // play state
 
-  let removeSidebar = true;
-  if (removeSidebar) {
-    let sheets = document.styleSheets;
-    let display_none = " { display: none !important; }";
 
-    // youtube video recommendations
-    sheets[0].insertRule("ytd-compact-video-renderer.style-scope" + display_none);
-    sheets[0].insertRule("ytd-compact-radio-renderer.style-scope" + display_none);
 
-    sheets[0].insertRule("#dismissable.ytd-compact-movie-renderer" + display_none);
-    sheets[0].insertRule("ytd-movie-offer-module-renderer" + display_none);
 
-    sheets[0].insertRule("#container.ytd-iframe-companion-renderer" + display_none);
+  // renderWhichPlayer checks API response for which platform the video is coming from
+  function renderWhichPlayer() {
+    if(player === "youtube") {
+      return  <div style={inlineCss} id="player">
+                  <YouTube 
+                    videoId= { vid }
+                    opts={optionsForVideo}
+                    onReady={playbackReady}
+                    onEnd={playbackEnd}
+                    onPause={playbackPause}
+                    onPlay={playbackPlay}
+                  />
 
-    sheets[0].insertRule("ytd-image-companion-renderer.style-scope" + display_none);
-    sheets[0].insertRule("ytd-compact-playlist-renderer.style-scope" + display_none);
-    sheets[0].insertRule("a.ytd-action-companion-renderer" + display_none);
-    sheets[0].insertRule("#google_companion_ad_div" + display_none);
-
-    sheets[0].insertRule("#upnext" + display_none);
-
-    sheets[0].insertRule("li.video-list-item.related-list-item" + display_none); 
-    sheets[0].insertRule("h4.watch-sidebar-head" + display_none); 
-    sheets[0].insertRule("hr.watch-sidebar-separation-line" + display_none); 
-    sheets[0].insertRule("button#watch-more-related-button" + display_none); 
+              </div>
+    } else if(player === "vimeo") {
+      return <div style={inlineCss} id="player">
+                <Vimeo
+                  video={ vid }
+                  onEnd={playbackEnd}
+                  width="640"
+                  height="390"
+                  autoplay
+                />
+              </div>
+    }
   }
 
-  function removeOverlays() {
-    
-    // Select the node that will be observed for mutations
-    var targetNode = document.getElementById("movie_player");
 
-    // Options for the observer (observe child and its descendants for mutations as well as attribute changes in them)
-    var overlayObserverConfiguration = { attributes: true, childList: true, subtree: true };
+  let display;
 
-    // When mutations are observed
-    var overlayMutationObserverCallback = function(mutationRecordList, observer) {
-        // Iterate through the list of MutationRecords
-        mutationRecordList.forEach((mutation) => {
-            switch(mutation.type) {
-                // When a node is added or removed
-                case 'childList':
-                    mutation.addedNodes.forEach((addedNode) => {
-                        // Check if the node contains class name "ytp-ce-video"
-                        if (addedNode.className.includes("ytp-ce-video")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                        // Check if the node contains class name "ytp-ce-channel"
-                        if (addedNode.className.includes("ytp-ce-channel")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                        // Check if the node contains class name "ytp-ce-playlist"
-                        if (addedNode.className.includes("ytp-ce-playlist")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                    });
-                    break;
-                // When a node attribute changed
-                case 'attributes':
-                    mutation.addedNodes.forEach((addedNode) => {
-                        // Check if the node contains class name "ytp-ce-video"
-                        if (addedNode.className.includes("ytp-ce-video")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                        // Check if the node contains class name "ytp-ce-channel"
-                        if (addedNode.className.includes("ytp-ce-channel")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                        // Check if the node contains class name "ytp-ce-playlist"
-                        if (addedNode.className.includes("ytp-ce-playlist")) {
-                            // Hide the node
-                            addedNode.style.display = "none";
-                        }
-                    });
-                    break;
-            }
-          });
-    };
+  if(!hide) {
+     display = <div style={pausedCss}>
+                  Paused
+                </div>
+  } else {
+    display = <div>
+                {renderWhichPlayer() || <div style={inlineCss}>Open the menu to search for content...</div>}
+              </div>
 
-    // Get the list of overlays that relate to videos
-    let listOfVideoOverlays = document.getElementsByClassName("ytp-ce-element ytp-ce-video");
-    if (listOfVideoOverlays.length > 0) {
-        // Iterate through each found Video overlay
-        for (let elem of listOfVideoOverlays){
-            // Hide the overlay
-            elem.style.display = "none";
-        }
-    }
-    // Get the list of overlays that relate to the channel overlay
-    let listOfChannelOverlays = document.getElementsByClassName("ytp-ce-element ytp-ce-channel");
-    if (listOfChannelOverlays.length > 0) {
-        // Iterate through each found channel overlay
-        for (let elem of listOfChannelOverlays){
-            // Hide the overlay
-            elem.style.display = "none";
-        }
-    }
-    // Get the list of overlays that relate to Playlists
-    let listOfPlaylistOverlays = document.getElementsByClassName("ytp-ce-element ytp-ce-playlist");
-    if (listOfPlaylistOverlays.length > 0) {
-        // Iterate through each found channel Playlist overlay
-        for (let elem of listOfPlaylistOverlays){
-            // Hide the overlay
-            elem.style.display = "none";
-        }
-    }
-
-    // Create an observer instance linked to the callback function
-    var observer = new MutationObserver(overlayMutationObserverCallback);
-
-    if(targetNode != null) {
-        // Start observing the target node for configured mutations
-        observer.observe(targetNode, overlayObserverConfiguration);
-    }
-}
-
-  removeOverlays()
+  }
 
 
 
+
+  // renderWhichPlayer
+
+// determines which type of content should be played. If no content is playing, can reopen nav bar
   return ( 
+    <div>
+        <Header popnav={handleNavClick}></Header>
+        { // Spring animation for side sliding nav 
+          !navStatus ?
+          (
+            null
+          )
+          :
+          (
+            <animated.div className="navmenu" style={ cssPropsAnim }>
+              <SearchMenu sendSelection={handleSearchSelection}></SearchMenu>
+            </animated.div>
+          )
+        }  
 
-    <div style={inlineCss} id="player">
-      <YouTube 
-        videoId= { vid.url }
-        opts={optionsForVideo}
-        onReady={testOnReady}
-        onEnd={testOnEnd}
-        onPause={testOnPause}
-        onPlay={testOnPlay}
-      />
-      <div style={transparentOverlay}>
 
-      </div>
+        {display}
+
+
+
     </div>
-  
   );
 
 }
 
 export default App;
 
+// temp storage of CSS
 const inlineCss = {
-  height: "100vh",
-  width: "100vw",
+  height: "500px",
+  width: "700px",
   margin: "0 auto",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
+  backgroundColor: "white"
 }
 
-const transparentOverlay = {
+const pausedCss = {
   height: "500px",
-  width: "700px",
-  backgroundColor: "rgba(0,0,0,0.3)",
-  position: "absolute",
+  width: "725px",
+  margin: "0 auto",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "blue",
   zIndex: "1",
-  right: "375px",
+  position: "absolute",
+  right: "350px",
+  top: "0"
 }
+
+  // video size for YouTube npm package
+  let optionsForVideo =  {
+    height: '390',
+    width: '640',
+  }
+  //
