@@ -22,3 +22,8 @@
   width: 60vw;
   height: 40px;
 }
+
+.search-results {
+  overflow: scroll;
+  overflow-x: auto;
+}

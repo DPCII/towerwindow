@@ -16,7 +16,6 @@ export default function SearchMenu(props) {
     }
 
 
-
     return (
         <div className="navmenu">
             <form onSubmit={handleSubmit}>
@@ -35,10 +34,10 @@ export default function SearchMenu(props) {
                     :
                     (
                         backendRes.map((el, index) => {
-                           return <EachResultContainer key={index} onClick={() => {props.sendSelection("Jq-0qkVTR04", "youtube")}}> 
+                           return <EachResultContainer key={index} onClick={() => {props.sendSelection(el.resId, el.vid_player)}}> 
                                      <h4>{el.title}</h4>
                                      <EachResultContent >
-                                        <img alt={el.title} src={`http://img.youtube.com/vi/2eY4gmndO3g/3.jpg`}/>
+                                        <img alt={el.title} src={`http://img.youtube.com/vi/${el.resId}/3.jpg`}/>
                                         <EachResultDescription>{el.description}</EachResultDescription> 
                                      </EachResultContent>
                                   </EachResultContainer>

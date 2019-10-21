@@ -1,0 +1,1592 @@
+// query was https://catalog.archives.gov/api/v1?&q=why we fight&resultTypes=holding&format=json
+// Found streamable video footage in mp4 format. Testing necessary player setup.
+
+{
+    "opaResponse": {
+         "@status": "200",
+         "time": "2019-10-21T17:53:34.300Z",
+         "request": {
+              "format": "json",
+              "pretty": true,
+              "action": "search",
+              "q": "why%20we%20fight",
+              "resultTypes": "holding"
+         },
+         "results": {
+              "queryTime": 332,
+              "total": 41278,
+              "offset": 0,
+              "rows": 10,
+              "result": [
+                   {
+                        "num": "1",
+                        "score": 0.049660604,
+                        "type": "description",
+                        "naId": "36084",
+                        "description": {
+                             "itemAv": {
+                                  "accessionNumberArray": {
+                                       "accessionNumber": {
+                                            "naId": "10000241",
+                                            "termName": "2355"
+                                       }
+                                  },
+                                  "dataControlGroup": {
+                                       "groupCd": "RDSM",
+                                       "groupId": "ou=NWCS-M,ou=groups"
+                                  },
+                                  "soundType": {
+                                       "naId": "10633643",
+                                       "termName": "Sound"
+                                  },
+                                  "generalRecordsTypeArray": {
+                                       "generalRecordsType": {
+                                            "naId": "10035844",
+                                            "termName": "Moving Images"
+                                       }
+                                  },
+                                  "geographicReferenceArray": {
+                                       "geographicPlaceName": [
+                                            {
+                                                 "recordHistory": {
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2014-04-11T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "naId": "10035686",
+                                                 "termName": "China"
+                                            },
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2009-09-28T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2009-09-28T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "naId": "10047370",
+                                                 "termName": "Stilwell Road"
+                                            }
+                                       ]
+                                  },
+                                  "isUnderEdit": "false",
+                                  "localIdentifier": "111-OF-25",
+                                  "naId": "36084",
+                                  "otherTitleArray": {
+                                       "otherTitle": {
+                                            "title": "Orientation film, no. 25"
+                                       }
+                                  },
+                                  "personalReferenceArray": {
+                                       "person": [
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2001-05-15T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2008-06-09T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "birthDate": {
+                                                      "year": "1874",
+                                                      "logicalDate": "1874-01-01T00:00:00"
+                                                 },
+                                                 "deathDate": {
+                                                      "year": "1965",
+                                                      "logicalDate": "1965-12-31T00:00:00"
+                                                 },
+                                                 "naId": "10583171",
+                                                 "termName": "Churchill, Winston, Sir, 1874-1965"
+                                            },
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2001-05-15T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2009-02-09T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "birthDate": {
+                                                      "year": "1882",
+                                                      "logicalDate": "1882-01-01T00:00:00"
+                                                 },
+                                                 "deathDate": {
+                                                      "year": "1945",
+                                                      "logicalDate": "1945-12-31T00:00:00"
+                                                 },
+                                                 "naId": "10582816",
+                                                 "termName": "Roosevelt, Franklin D. (Franklin Delano), 1882-1945"
+                                            }
+                                       ]
+                                  },
+                                  "physicalOccurrenceArray": {
+                                       "itemAvPhysicalOccurrence": {
+                                            "copyStatus": {
+                                                 "naId": "10031431",
+                                                 "termName": "Preservation"
+                                            },
+                                            "locationArray": {
+                                                 "location": {
+                                                      "facility": {
+                                                           "naId": "10048491",
+                                                           "termName": "National Archives at College Park - Archives II (College Park, MD)"
+                                                      }
+                                                 }
+                                            },
+                                            "mediaOccurrenceArray": {
+                                                 "itemAvMediaOccurrence": {
+                                                      "color": {
+                                                           "naId": "10048655",
+                                                           "termName": "Black-and-White"
+                                                      },
+                                                      "specificMediaType": {
+                                                           "naId": "10048689",
+                                                           "termName": "Film Reel"
+                                                      }
+                                                 }
+                                            },
+                                            "referenceUnitArray": {
+                                                 "referenceUnit": {
+                                                      "mailCode": "RDSM",
+                                                      "name": "National Archives at College Park - Motion Pictures",
+                                                      "address1": "National Archives at College Park",
+                                                      "address2": "8601 Adelphi Road",
+                                                      "city": "College Park",
+                                                      "state": "MD",
+                                                      "postCode": "20740-6001",
+                                                      "phone": "301-837-3540",
+                                                      "fax": "301-837-3620",
+                                                      "email": "mopix@nara.gov",
+                                                      "naId": "30",
+                                                      "termName": "National Archives at College Park - Motion Pictures"
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "productionDateArray": {
+                                       "proposableQualifiableDate": {
+                                            "year": "1944",
+                                            "logicalDate": "1944-01-01T00:00:00"
+                                       }
+                                  },
+                                  "recordHistory": {
+                                       "changed": {
+                                            "modification": {
+                                                 "dateTime": "2017-11-08T18:15:22"
+                                            }
+                                       },
+                                       "created": {
+                                            "dateTime": "2001-12-03T00:00:00"
+                                       }
+                                  },
+                                  "recordKey": "36070",
+                                  "scopeAndContentNote": "Gen. Sultan explains why U.S. troops are needed in India and Burma. Reel 1 describes the Japanese seizure of the Chinese coast, the necessity for the Burma Road, and Chinese arms shortages. Japanese artillery is fired and tanks advance. Barefoot Chinese troops advance. Describes personnel resources in China. Chinese troops are flown by Air Transport Command planes from Kunming to India. Reel 2, troops and supplies are loaded at Kunming. Planes of the 14th Air Force bomb Japanese positions in Burma. Chinese, British, and U.S. troops advance in North Burma to clear the Ledo Road. Mules and infantry move through jungle terrain; a large Japanese force is attacked. Supplies are dropped by parachute. Wounded undergo operations in the field and are evacuated by air. Japanese units counterattack near Imphal in Assam. Reel 3, British artillery and machine gun fire halts the advance. Chinese advance into Burma by crossing flooded roads; shows street fighting in a rubbled town. Planes and artillery bombard Bhamo; infantry storms the city. The proposed Ledo Road is surveyed, jungle growth is cut, bulldozers clear debris, and Gen. Pick rides in the first truck convoy over the road. Crowds cheer as the convoy reaches Kunming. Reel 4, sections of oil pipe are unloaded at Calcutta. Jungle foliage is cleared from the pipeline route into China. Pres. Roosevelt and Winston Churchill meet.\n",
+                                  "specificRecordsTypeArray": {
+                                       "specificRecordsType": {
+                                            "recordHistory": {
+                                                 "created": {
+                                                      "dateTime": "2001-04-25T00:00:00"
+                                                 },
+                                                 "changed": {
+                                                      "modification": {
+                                                           "dateTime": "2013-04-12T00:00:00"
+                                                      }
+                                                 }
+                                            },
+                                            "naId": "10631732",
+                                            "termName": "Motion pictures"
+                                       }
+                                  },
+                                  "title": "WHY WE'RE HERE",
+                                  "topicalSubjectArray": {
+                                       "topicalSubject": [
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2001-04-09T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2008-02-05T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "naId": "10642043",
+                                                 "termName": "Sino-Japanese War, 1937-1945"
+                                            },
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2001-04-09T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2005-03-08T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "naId": "10643601",
+                                                 "termName": "Transportation, Military"
+                                            },
+                                            {
+                                                 "recordHistory": {
+                                                      "created": {
+                                                           "dateTime": "2001-04-09T00:00:00"
+                                                      },
+                                                      "changed": {
+                                                           "modification": {
+                                                                "dateTime": "2013-02-28T00:00:00"
+                                                           }
+                                                      }
+                                                 },
+                                                 "naId": "10644634",
+                                                 "termName": "World War, 1939-1945"
+                                            }
+                                       ]
+                                  },
+                                  "useRestriction": {
+                                       "status": {
+                                            "naId": "10675512",
+                                            "termName": "Undetermined"
+                                       }
+                                  },
+                                  "variantControlNumberArray": {
+                                       "variantControlNumber": {
+                                            "number": "NWDNM(m)-111-OF-25",
+                                            "type": {
+                                                 "naId": "10675997",
+                                                 "termName": "NAIL Control Number"
+                                            }
+                                       }
+                                  },
+                                  "parentSeries": {
+                                       "naId": "36066",
+                                       "title": "Orientation Films",
+                                       "inclusiveDates": {
+                                            "inclusiveEndDate": {
+                                                 "year": "1949",
+                                                 "logicalDate": "1949-12-31T00:00:00"
+                                            },
+                                            "inclusiveStartDate": {
+                                                 "year": "1942",
+                                                 "logicalDate": "1942-01-01T00:00:00"
+                                            }
+                                       },
+                                       "parentRecordGroup": {
+                                            "naId": "440",
+                                            "title": "Records of the Office of the Chief Signal Officer",
+                                            "recordGroupNumber": "111",
+                                            "inclusiveDates": {
+                                                 "inclusiveEndDate": {
+                                                      "year": "1985",
+                                                      "logicalDate": "1985-12-31T00:00:00"
+                                                 },
+                                                 "inclusiveStartDate": {
+                                                      "year": "1860",
+                                                      "logicalDate": "1860-01-01T00:00:00"
+                                                 }
+                                            }
+                                       },
+                                       "creatingOrganizationArray": {
+                                            "creatingOrganization": {
+                                                 "creator": {
+                                                      "naId": "10470416",
+                                                      "termName": "Department of Defense. Department of the Army. Office of the Chief Signal Officer. (9/18/1947 - 3/1/1964)",
+                                                      "establishDate": {
+                                                           "day": "18",
+                                                           "month": "9",
+                                                           "year": "1947",
+                                                           "logicalDate": "1947-09-18T00:00:00"
+                                                      },
+                                                      "abolishDate": {
+                                                           "day": "1",
+                                                           "month": "3",
+                                                           "year": "1964",
+                                                           "logicalDate": "1964-03-01T00:00:00"
+                                                      }
+                                                 },
+                                                 "creatorType": {
+                                                      "naId": "10031465",
+                                                      "termName": "Most Recent"
+                                                 }
+                                            }
+                                       }
+                                  }
+                             }
+                        },
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": [
+                                  {
+                                       "@id": "75502976",
+                                       "@objectSortNum": "1",
+                                       "technicalMetadata": {
+                                            "size": "154380868",
+                                            "mime": "video/mp4",
+                                            "createDate": "2016-09-23T16:11:39Z",
+                                            "modifyDate": "2016-09-23T16:16:23Z"
+                                       },
+                                       "designator": "Reel 1",
+                                       "file": {
+                                            "@mime": "video/mp4",
+                                            "@name": "111-of-25-r1.mp4",
+                                            "@path": "/lz/mopix/111/of/111-of-25-r1.mp4",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r1.mp4"
+                                       }
+                                  },
+                                  {
+                                       "@id": "75502977",
+                                       "@objectSortNum": "2",
+                                       "technicalMetadata": {
+                                            "size": "157319926",
+                                            "mime": "video/mp4",
+                                            "createDate": "2016-09-23T16:16:25Z",
+                                            "modifyDate": "2016-09-23T16:21:09Z"
+                                       },
+                                       "designator": "Reel 2",
+                                       "file": {
+                                            "@mime": "video/mp4",
+                                            "@name": "111-of-25-r2.mp4",
+                                            "@path": "/lz/mopix/111/of/111-of-25-r2.mp4",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r2.mp4"
+                                       }
+                                  },
+                                  {
+                                       "@id": "75502978",
+                                       "@objectSortNum": "3",
+                                       "technicalMetadata": {
+                                            "size": "138372900",
+                                            "mime": "video/mp4",
+                                            "createDate": "2016-09-23T16:21:11Z",
+                                            "modifyDate": "2016-09-23T16:25:27Z"
+                                       },
+                                       "designator": "Reel 3",
+                                       "file": {
+                                            "@mime": "video/mp4",
+                                            "@name": "111-of-25-r3.mp4",
+                                            "@path": "/lz/mopix/111/of/111-of-25-r3.mp4",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r3.mp4"
+                                       }
+                                  },
+                                  {
+                                       "@id": "75502979",
+                                       "@objectSortNum": "4",
+                                       "technicalMetadata": {
+                                            "size": "113081682",
+                                            "mime": "video/mp4",
+                                            "createDate": "2016-09-23T16:25:29Z",
+                                            "modifyDate": "2016-09-23T16:28:51Z"
+                                       },
+                                       "designator": "Reel 4",
+                                       "file": {
+                                            "@mime": "video/mp4",
+                                            "@name": "111-of-25-r4.mp4",
+                                            "@path": "/lz/mopix/111/of/111-of-25-r4.mp4",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r4.mp4"
+                                       }
+                                  }
+                             ]
+                        }
+                   },
+                   {
+                        "num": "2",
+                        "score": 0.049660604,
+                        "type": "object",
+                        "parentDescriptionNaId": "36084",
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": {
+                                  "@id": "75502976",
+                                  "@objectSortNum": "1",
+                                  "technicalMetadata": {
+                                       "size": "154380868",
+                                       "mime": "video/mp4",
+                                       "createDate": "2016-09-23T16:11:39Z",
+                                       "modifyDate": "2016-09-23T16:16:23Z"
+                                  },
+                                  "designator": "Reel 1",
+                                  "file": {
+                                       "@mime": "video/mp4",
+                                       "@name": "111-of-25-r1.mp4",
+                                       "@path": "/lz/mopix/111/of/111-of-25-r1.mp4",
+                                       "@type": "primary",
+                                       "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r1.mp4"
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "3",
+                        "score": 0.049660604,
+                        "type": "object",
+                        "parentDescriptionNaId": "36084",
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": {
+                                  "@id": "75502977",
+                                  "@objectSortNum": "2",
+                                  "technicalMetadata": {
+                                       "size": "157319926",
+                                       "mime": "video/mp4",
+                                       "createDate": "2016-09-23T16:16:25Z",
+                                       "modifyDate": "2016-09-23T16:21:09Z"
+                                  },
+                                  "designator": "Reel 2",
+                                  "file": {
+                                       "@mime": "video/mp4",
+                                       "@name": "111-of-25-r2.mp4",
+                                       "@path": "/lz/mopix/111/of/111-of-25-r2.mp4",
+                                       "@type": "primary",
+                                       "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r2.mp4"
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "4",
+                        "score": 0.049660604,
+                        "type": "object",
+                        "parentDescriptionNaId": "36084",
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": {
+                                  "@id": "75502978",
+                                  "@objectSortNum": "3",
+                                  "technicalMetadata": {
+                                       "size": "138372900",
+                                       "mime": "video/mp4",
+                                       "createDate": "2016-09-23T16:21:11Z",
+                                       "modifyDate": "2016-09-23T16:25:27Z"
+                                  },
+                                  "designator": "Reel 3",
+                                  "file": {
+                                       "@mime": "video/mp4",
+                                       "@name": "111-of-25-r3.mp4",
+                                       "@path": "/lz/mopix/111/of/111-of-25-r3.mp4",
+                                       "@type": "primary",
+                                       "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r3.mp4"
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "5",
+                        "score": 0.049660604,
+                        "type": "object",
+                        "parentDescriptionNaId": "36084",
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": {
+                                  "@id": "75502979",
+                                  "@objectSortNum": "4",
+                                  "technicalMetadata": {
+                                       "size": "113081682",
+                                       "mime": "video/mp4",
+                                       "createDate": "2016-09-23T16:25:29Z",
+                                       "modifyDate": "2016-09-23T16:28:51Z"
+                                  },
+                                  "designator": "Reel 4",
+                                  "file": {
+                                       "@mime": "video/mp4",
+                                       "@name": "111-of-25-r4.mp4",
+                                       "@path": "/lz/mopix/111/of/111-of-25-r4.mp4",
+                                       "@type": "primary",
+                                       "@url": "https://catalog.archives.gov/catalogmedia/lz/mopix/111/of/111-of-25-r4.mp4"
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "6",
+                        "score": 0.039901353,
+                        "type": "description",
+                        "naId": "961559",
+                        "description": {
+                             "fileUnit": {
+                                  "accessRestriction": {
+                                       "status": {
+                                            "naId": "10031403",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "dataControlGroup": {
+                                       "groupCd": "RDTP2",
+                                       "groupId": "ou=RDTP2,ou=groups"
+                                  },
+                                  "generalRecordsTypeArray": {
+                                       "generalRecordsType": {
+                                            "naId": "10035676",
+                                            "termName": "Textual Records"
+                                       }
+                                  },
+                                  "isUnderEdit": "false",
+                                  "naId": "961559",
+                                  "physicalOccurrenceArray": {
+                                       "fileUnitPhysicalOccurrence": {
+                                            "copyStatus": {
+                                                 "naId": "10031434",
+                                                 "termName": "Preservation-Reproduction-Reference"
+                                            },
+                                            "referenceUnitArray": {
+                                                 "referenceUnit": {
+                                                      "mailCode": "RDT2",
+                                                      "name": "National Archives at College Park - Textual Reference",
+                                                      "address1": "National Archives at College Park",
+                                                      "address2": "8601 Adelphi Road",
+                                                      "city": "College Park",
+                                                      "state": "MD",
+                                                      "postCode": "20740-6001",
+                                                      "phone": "301-837-3510",
+                                                      "fax": "301-837-1752",
+                                                      "email": "Archives2reference@nara.gov",
+                                                      "naId": "33",
+                                                      "termName": "National Archives at College Park - Textual Reference"
+                                                 }
+                                            },
+                                            "locationArray": {
+                                                 "location": {
+                                                      "facility": {
+                                                           "naId": "10048491",
+                                                           "termName": "National Archives at College Park - Archives II (College Park, MD)"
+                                                      }
+                                                 }
+                                            },
+                                            "mediaOccurrenceArray": {
+                                                 "mediaOccurrence": {
+                                                      "containerId": "25",
+                                                      "specificMediaType": {
+                                                           "naId": "10048756",
+                                                           "termName": "Paper"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "recordHistory": {
+                                       "changed": {
+                                            "modification": [
+                                                 {
+                                                      "dateTime": "2006-09-08T00:00:00"
+                                                 },
+                                                 {
+                                                      "dateTime": "2015-06-10T17:02:24"
+                                                 }
+                                            ]
+                                       },
+                                       "created": {
+                                            "dateTime": "2006-09-08T00:00:00"
+                                       }
+                                  },
+                                  "recordKey": "994237",
+                                  "title": "753. Why We Fight",
+                                  "useRestriction": {
+                                       "note": "Some items may be subject to copyright or other intellectual property restrictions.",
+                                       "status": {
+                                            "naId": "10675511",
+                                            "termName": "Restricted - Possibly"
+                                       }
+                                  },
+                                  "itemCount": "0",
+                                  "itemAvCount": "0",
+                                  "parentSeries": {
+                                       "naId": "782704",
+                                       "title": "Publications for Overseas Distribution",
+                                       "inclusiveDates": {
+                                            "inclusiveEndDate": {
+                                                 "year": "1945",
+                                                 "logicalDate": "1945-12-31T00:00:00"
+                                            },
+                                            "inclusiveStartDate": {
+                                                 "year": "1942",
+                                                 "logicalDate": "1942-01-01T00:00:00"
+                                            }
+                                       },
+                                       "parentRecordGroup": {
+                                            "naId": "535",
+                                            "title": "Records of the Office of War Information",
+                                            "recordGroupNumber": "208",
+                                            "inclusiveDates": {
+                                                 "inclusiveEndDate": {
+                                                      "year": "1951",
+                                                      "logicalDate": "1951-12-31T00:00:00"
+                                                 },
+                                                 "inclusiveStartDate": {
+                                                      "year": "1926",
+                                                      "logicalDate": "1926-01-01T00:00:00"
+                                                 }
+                                            }
+                                       },
+                                       "creatingOrganizationArray": {
+                                            "creatingOrganization": {
+                                                 "creator": {
+                                                      "naId": "10488480",
+                                                      "termName": "Office for Emergency Management. Office of War Information. Overseas Operations Branch. New York Office. Bureau of Overseas Publications. 6/13/1942-1945 ?",
+                                                      "establishDate": {
+                                                           "year": "1942",
+                                                           "month": "6",
+                                                           "day": "13",
+                                                           "logicalDate": "1942-06-13T00:00:00"
+                                                      },
+                                                      "abolishDate": {
+                                                           "year": "1945",
+                                                           "logicalDate": "1945-12-31T00:00:00"
+                                                      }
+                                                 },
+                                                 "creatorType": {
+                                                      "naId": "10031465",
+                                                      "termName": "Most Recent"
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "variantControlNumberArray": {
+                                       "variantControlNumber": {
+                                            "number": "NC148 462",
+                                            "type": {
+                                                 "naId": "10675882",
+                                                 "termName": "HMS/MLR Entry Number"
+                                            }
+                                       }
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "7",
+                        "score": 0.03687391,
+                        "type": "object",
+                        "parentDescriptionNaId": "29915359",
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": {
+                                  "@id": "32621114",
+                                  "@objectSortNum": "6",
+                                  "technicalMetadata": {
+                                       "size": "6974513",
+                                       "mime": "application/pdf",
+                                       "createDate": "2016-05-25T13:20:32Z",
+                                       "modifyDate": "2016-05-25T13:20:32Z",
+                                       "Page-Count": "5"
+                                  },
+                                  "file": {
+                                       "@mime": "application/pdf",
+                                       "@name": "LAcomic.pdf",
+                                       "@path": "content/dc-metro/rg-012/573507/LAcomic.pdf",
+                                       "@type": "primary",
+                                       "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic.pdf",
+                                       "@extractedTextFile": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/extracted-text/LAcomic.pdf.txt"
+                                  },
+                                  "thumbnail": {
+                                       "@mime": "image/jpeg",
+                                       "@path": "opa-renditions/thumbnails/LAcomic.pdf-thumb.jpg",
+                                       "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic.pdf-thumb.jpg"
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "8",
+                        "score": 0.03686344,
+                        "type": "description",
+                        "naId": "29915359",
+                        "description": {
+                             "item": {
+                                  "naId": "29915359",
+                                  "accessRestriction": {
+                                       "status": {
+                                            "naId": "10031403",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "coverageDates": null,
+                                  "dataControlGroup": {
+                                       "groupCd": "RDTP2",
+                                       "groupId": "ou=RDTP2,ou=groups",
+                                       "groupName": "National Archives at College Park - Textual Reference"
+                                  },
+                                  "generalRecordsTypeArray": {
+                                       "generalRecordsType": {
+                                            "naId": "10035676",
+                                            "termName": "Textual Records"
+                                       }
+                                  },
+                                  "isUnderEdit": "false",
+                                  "physicalOccurrenceArray": {
+                                       "itemPhysicalOccurrence": {
+                                            "copyStatus": {
+                                                 "naId": "10031434",
+                                                 "termName": "Preservation-Reproduction-Reference"
+                                            },
+                                            "locationArray": {
+                                                 "location": {
+                                                      "facility": {
+                                                           "naId": "10048491",
+                                                           "termName": "National Archives at College Park - Archives II (College Park, MD)"
+                                                      }
+                                                 }
+                                            },
+                                            "mediaOccurrenceArray": {
+                                                 "itemMediaOccurrence": {
+                                                      "containerId": "100",
+                                                      "generalMediaTypeArray": {
+                                                           "generalMediaType": {
+                                                                "naId": "12000005",
+                                                                "termName": "Loose Sheets"
+                                                           }
+                                                      },
+                                                      "specificMediaType": {
+                                                           "naId": "10048756",
+                                                           "termName": "Paper"
+                                                      }
+                                                 }
+                                            },
+                                            "referenceUnitArray": {
+                                                 "referenceUnit": {
+                                                      "mailCode": "RDT2",
+                                                      "name": "National Archives at College Park - Textual Reference",
+                                                      "address1": "National Archives at College Park",
+                                                      "address2": "8601 Adelphi Road",
+                                                      "city": "College Park",
+                                                      "state": "MD",
+                                                      "postCode": "20740-6001",
+                                                      "phone": "301-837-3510",
+                                                      "fax": "301-837-1752",
+                                                      "email": "Archives2reference@nara.gov",
+                                                      "naId": "33",
+                                                      "termName": "National Archives at College Park - Textual Reference"
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "recordHistory": {
+                                       "approved": {
+                                            "modification": {
+                                                 "dateTime": "2016-06-13T15:05:37"
+                                            }
+                                       },
+                                       "changed": {
+                                            "modification": [
+                                                 {
+                                                      "dateTime": "2016-06-13T15:05:34"
+                                                 },
+                                                 {
+                                                      "dateTime": "2016-06-22T18:15:31"
+                                                 }
+                                            ]
+                                       },
+                                       "created": {
+                                            "dateTime": "2016-05-25T14:27:21"
+                                       }
+                                  },
+                                  "scopeAndContentNote": "This comic was created by the Louisiana State Sovereignty Commission and includes annotations.",
+                                  "title": "We the People",
+                                  "useRestriction": {
+                                       "status": {
+                                            "naId": "10675400",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "variantControlNumberArray": {
+                                       "variantControlNumber": [
+                                            {
+                                                 "number": "A1 122",
+                                                 "type": {
+                                                      "naId": "10675882",
+                                                      "termName": "HMS/MLR Entry Number"
+                                                 }
+                                            },
+                                            {
+                                                 "number": "A1 122",
+                                                 "type": {
+                                                      "naId": "10675882",
+                                                      "termName": "HMS/MLR Entry Number"
+                                                 }
+                                            }
+                                       ]
+                                  },
+                                  "parentFileUnit": {
+                                       "naId": "29914955",
+                                       "title": "LL 2-3 Court Decisions (segregation-integration) General",
+                                       "parentSeries": {
+                                            "naId": "573507",
+                                            "title": "Office Files",
+                                            "inclusiveDates": {
+                                                 "inclusiveEndDate": {
+                                                      "year": "1980",
+                                                      "logicalDate": "1980-12-31T00:00:00"
+                                                 },
+                                                 "inclusiveStartDate": {
+                                                      "year": "1928",
+                                                      "logicalDate": "1928-01-01T00:00:00"
+                                                 }
+                                            },
+                                            "parentRecordGroup": {
+                                                 "naId": "341",
+                                                 "title": "Records of the Office of Education",
+                                                 "recordGroupNumber": "12",
+                                                 "inclusiveDates": {
+                                                      "inclusiveEndDate": {
+                                                           "year": "1980",
+                                                           "logicalDate": "1980-12-31T00:00:00"
+                                                      },
+                                                      "inclusiveStartDate": {
+                                                           "year": "1870",
+                                                           "logicalDate": "1870-01-01T00:00:00"
+                                                      }
+                                                 }
+                                            },
+                                            "creatingOrganizationArray": {
+                                                 "creatingOrganization": {
+                                                      "creator": {
+                                                           "naId": "10461542",
+                                                           "termName": "Department of Health, Education, and Welfare. Office of Education. Office of the Commissioner of Education. 4/11/1953-5/4/1980",
+                                                           "establishDate": {
+                                                                "year": "1953",
+                                                                "month": "4",
+                                                                "day": "11",
+                                                                "logicalDate": "1953-04-11T00:00:00"
+                                                           },
+                                                           "abolishDate": {
+                                                                "year": "1980",
+                                                                "month": "5",
+                                                                "day": "4",
+                                                                "logicalDate": "1980-05-04T00:00:00"
+                                                           }
+                                                      },
+                                                      "creatorType": {
+                                                           "naId": "10031465",
+                                                           "termName": "Most Recent"
+                                                      }
+                                                 }
+                                            }
+                                       },
+                                       "inclusiveDates": {
+                                            "inclusiveEndDate": {
+                                                 "year": "1980",
+                                                 "logicalDate": "1980-12-31T00:00:00"
+                                            },
+                                            "inclusiveStartDate": {
+                                                 "year": "1928",
+                                                 "logicalDate": "1928-01-01T00:00:00"
+                                            }
+                                       }
+                                  }
+                             }
+                        },
+                        "objects": {
+                             "@created": "2015-01-01T00:00:00Z",
+                             "@version": "OPA-OBJECTS-1.0",
+                             "object": [
+                                  {
+                                       "@id": "32621114",
+                                       "@objectSortNum": "6",
+                                       "technicalMetadata": {
+                                            "size": "6974513",
+                                            "mime": "application/pdf",
+                                            "createDate": "2016-05-25T13:20:32Z",
+                                            "modifyDate": "2016-05-25T13:20:32Z",
+                                            "Page-Count": "5"
+                                       },
+                                       "file": {
+                                            "@mime": "application/pdf",
+                                            "@name": "LAcomic.pdf",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic.pdf",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic.pdf",
+                                            "@extractedTextFile": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/extracted-text/LAcomic.pdf.txt"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic.pdf-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic.pdf-thumb.jpg"
+                                       }
+                                  },
+                                  {
+                                       "@id": "32621115",
+                                       "@objectSortNum": "1",
+                                       "technicalMetadata": {
+                                            "size": "5456994",
+                                            "mime": "image/jpeg",
+                                            "height": "4009 pixels",
+                                            "width": "2807 pixels",
+                                            "orientation": "Top, left side (Horizontal / normal)",
+                                            "software": "Adobe Photoshop CS6 (Windows)"
+                                       },
+                                       "file": {
+                                            "@mime": "image/jpeg",
+                                            "@name": "LAcomic_001.jpg",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic_001.jpg",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic_001.jpg"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic_001.jpg-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic_001.jpg-thumb.jpg"
+                                       },
+                                       "imageTiles": {
+                                            "@path": "opa-renditions/image-tiles/LAcomic_001.jpg.dzi",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/image-tiles/LAcomic_001.jpg.dzi"
+                                       },
+                                       "publicContributions": {
+                                            "tags": {
+                                                 "@total": "3",
+                                                 "tag": [
+                                                      {
+                                                           "@created": "2017-07-06T23:42:07Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Constitution"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:42:09Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Civics"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:43:31Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Louisiana State Sovereignty Commission"
+                                                      }
+                                                 ]
+                                            },
+                                            "transcription": {
+                                                 "@lastModified": "2017-07-06T23:43:14Z",
+                                                 "@version": "1",
+                                                 "text": "\"We the People...\"\n\nArticle X\n\n\"THE POWERS NOT DELEGATED\nTO THE UNITED STATES BY\nTHIS CONSTITUTION....ARE \nRESERVED...TO THE PEOPLE\"\n\nTHE LOUSIANA STATE SOVEREIGNTY COMMISSION",
+                                                 "users": {
+                                                      "@total": "1",
+                                                      "user": {
+                                                           "@isNaraStaff": "false",
+                                                           "@lastModified": "2017-07-06T23:43:14Z",
+                                                           "@user": "Pugsley07302",
+                                                           "@version": "1"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  {
+                                       "@id": "32621116",
+                                       "@objectSortNum": "2",
+                                       "technicalMetadata": {
+                                            "size": "11887272",
+                                            "mime": "image/jpeg",
+                                            "height": "4021 pixels",
+                                            "width": "5566 pixels",
+                                            "orientation": "Top, left side (Horizontal / normal)",
+                                            "software": "Adobe Photoshop CS6 (Windows)"
+                                       },
+                                       "file": {
+                                            "@mime": "image/jpeg",
+                                            "@name": "LAcomic_002.jpg",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic_002.jpg",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic_002.jpg"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic_002.jpg-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic_002.jpg-thumb.jpg"
+                                       },
+                                       "imageTiles": {
+                                            "@path": "opa-renditions/image-tiles/LAcomic_002.jpg.dzi",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/image-tiles/LAcomic_002.jpg.dzi"
+                                       },
+                                       "publicContributions": {
+                                            "tags": {
+                                                 "@total": "2",
+                                                 "tag": [
+                                                      {
+                                                           "@created": "2017-07-06T23:48:05Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Immunity"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:48:07Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Measles"
+                                                      }
+                                                 ]
+                                            },
+                                            "transcription": {
+                                                 "@lastModified": "2017-07-06T23:53:53Z",
+                                                 "@version": "2",
+                                                 "users": {
+                                                      "@total": "2",
+                                                      "user": [
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-06T23:47:50Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "1"
+                                                           },
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-06T23:53:53Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "2"
+                                                           }
+                                                      ]
+                                                 },
+                                                 "text": "[1st Panel, 1st page] \"Muner\"\n\"Muner\" G'bye!\n[2nd Panel]\nOh Hello, Pop.  Did \nyou see our Secret Stuff?\nOur \"Muner\" Club Sign?\n\nWell, I did see some\nsort of shenanigans\ngoing on.  What's a \n\"Muner\" Club?\n[3rd Panel]\nJust some of us kids who\nlike each other sort of\nformed a club.  We call it\n\"munber\" from being \"mune\"\nto stuff, like \"mune \nfrom measles.\"\nAnything wrong\nwith that, Pop?\n[4th Panel]\nSounds great ... like\nyou're just exercising\nyour constitutional \nrights.  Say, do you know\nanything about the \nU.S. Constitution?\n[2nd Page]\n[1st Panel]\nSure. Listen: \"We the People of the United States, In order\nto Form a More Perfect Union, Establish Justice, Insure Domestic\nTranquility, Provide for the Common Defense, Promote the General \nWelfare, and secure the Blessings of Liberty to Ourselves and \nOur Posterity, do Ordain and Establish this Constitution \nFor the United States of America.\"\nHow's that?\nFine, Son...But I\nmeant, did you\nunderstand it?\n[2nd Panel]\n\"Did You Know that A\nLot of those People Back\nThere Fought and Died \nSo that you Could, well,\nform a \"muner\" club?\nYou ARE Their Posterity, y'know.\"\n[Panel 3]\nI understand, sort of.  \nLike \"tranquility\" means \n\"peace\", or \"being happy\".\nWhat else does \nit do, sir?\nWell, it sets up a \nfederal government,\nwith certain powers \nsuch as keeping an army, \nand taxing to pay for it."
+                                            }
+                                       }
+                                  },
+                                  {
+                                       "@id": "32621117",
+                                       "@objectSortNum": "3",
+                                       "technicalMetadata": {
+                                            "size": "7647222",
+                                            "mime": "image/jpeg",
+                                            "height": "4021 pixels",
+                                            "width": "5578 pixels",
+                                            "orientation": "Top, left side (Horizontal / normal)",
+                                            "software": "Adobe Photoshop CS6 (Windows)"
+                                       },
+                                       "file": {
+                                            "@mime": "image/jpeg",
+                                            "@name": "LAcomic_003.jpg",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic_003.jpg",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic_003.jpg"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic_003.jpg-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic_003.jpg-thumb.jpg"
+                                       },
+                                       "imageTiles": {
+                                            "@path": "opa-renditions/image-tiles/LAcomic_003.jpg.dzi",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/image-tiles/LAcomic_003.jpg.dzi"
+                                       },
+                                       "publicContributions": {
+                                            "tags": {
+                                                 "@total": "6",
+                                                 "tag": [
+                                                      {
+                                                           "@created": "2017-07-06T23:59:45Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Racism"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:59:47Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Sexism"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:59:49Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Little Rock"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:59:52Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Segregation"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-06T23:59:55Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Integration"
+                                                      },
+                                                      {
+                                                           "@created": "2017-07-07T00:01:40Z",
+                                                           "@isNaraStaff": "false",
+                                                           "@user": "Pugsley07302",
+                                                           "$": "Separate but Equal"
+                                                      }
+                                                 ]
+                                            },
+                                            "transcription": {
+                                                 "@lastModified": "2017-09-14T01:13:40Z",
+                                                 "@version": "5",
+                                                 "users": {
+                                                      "@total": "5",
+                                                      "user": [
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-06T23:59:40Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "1"
+                                                           },
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-07T00:01:31Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "2"
+                                                           },
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-07T00:03:02Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "3"
+                                                           },
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-07-07T00:05:31Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "4"
+                                                           },
+                                                           {
+                                                                "@isNaraStaff": "false",
+                                                                "@lastModified": "2017-09-14T01:13:40Z",
+                                                                "@user": "Pugsley07302",
+                                                                "@version": "5"
+                                                           }
+                                                      ]
+                                                 },
+                                                 "text": "[Page 4] [Panel 1]\nYou mean like things no one could do alone, huh?\nExactly, son.  Congress quickly added some important amendments.\nOne, the tenth, says the federal government is granted only specified\npowers, and that all others, like education, are reserved to the people,\nthrough their states.\n[Panel 2]\nIs that important, Pop?\nVery important, Bub.  There are even some people who think even our state\nowned schools, and a lot of other things all ought to be run out of Washington.\nSome would even like to control membership of private groups, like your\n\"muner\" club.\n[Panel 3]\nAw, Pop, y'mean they could make us put ol' girls\nin our club?  NOT Girls? [h/w] inference not negro??\nSo far, son, you can pick your own friends.  But some \nfederal judges have ordered races mixed in schools\nwhether either wanted it or not.\n[Panel 3]\nYou mean like in Little Rock?\nBut colored people have nice schools.  Lots [h/w False] of them are better than ours.\nWouldn't it be fair to have separate schools just so long as they were equal? [h/w They never were equal.  Why teach this?]\n\nThat's exactly what a federal court held, for many years, and we all got along just fine.\n[Page 5]\n[First Panel]\nIs it just schools they're doing this to?\nNo, son, some of those same people in Washington want to tell people, for instance\nthat they can't pick their own employees.  They want to regulate more and more \nthings in our lives.\n[Second Panel]\nBut why, pop? Haven't we been getting along pretty well?\nYou bet we have.  Under what we call \"constitutional government,\" we became the happiest and most prosperous in the world.  But there is some bitterness growing now.\n[Third Panel]\nThen why? I mean, why do these people want to change things?\nTell you the truth, Bub, I don't really know.  Some of them are just, well, just not very practical.  Some are just trying to get votes, to get more power.\n[Fourth Panel]\nSome, Like the Communists just want to stir up trouble, to weaken us.\nYeah...old Communists.  They're just jealous.  We can beat them up, any old time...huh, pop?"
+                                            }
+                                       }
+                                  },
+                                  {
+                                       "@id": "32621118",
+                                       "@objectSortNum": "4",
+                                       "technicalMetadata": {
+                                            "size": "12008097",
+                                            "mime": "image/jpeg",
+                                            "height": "4021 pixels",
+                                            "width": "5566 pixels",
+                                            "orientation": "Top, left side (Horizontal / normal)",
+                                            "software": "Adobe Photoshop CS6 (Windows)"
+                                       },
+                                       "file": {
+                                            "@mime": "image/jpeg",
+                                            "@name": "LAcomic_004.jpg",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic_004.jpg",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic_004.jpg"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic_004.jpg-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic_004.jpg-thumb.jpg"
+                                       },
+                                       "imageTiles": {
+                                            "@path": "opa-renditions/image-tiles/LAcomic_004.jpg.dzi",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/image-tiles/LAcomic_004.jpg.dzi"
+                                       },
+                                       "publicContributions": {
+                                            "transcription": {
+                                                 "@lastModified": "2017-09-14T01:22:20Z",
+                                                 "@version": "1",
+                                                 "text": "[Page 6]\n[First Panel]\nWe don't want war, son, ever.  But if it comes, we can win it if we can keep our government run by its people.  In other words, if we stick to the Constitution.  \nHow can we do that?\n[Second Panel]\n\"First we've got to do more than just talk about it. We've got to vote, carefully, for good Americans.  Then we must tell our Representatives in Washington that we want our government returned to the People.\"\n[Third Panel]\nWe've got to tell our elected officials that we, the people, are tired of just more and more regulations by power-grabbing federal agencies.\n[Fourth Panel]\nHi Mom!\nSay, son, I've been making a regular speech, but the situation is getting more and more serious. And I want you to grow up in the kind of country the writers of the Constitution wanted you to have.  Now, you want to talk about fishing?\n[Page 7]\n[First Panel]\nHeck, no ... I don't want to just talk about it.  Like you said, let's DO something about it.  I'll get the tackle, and, Pop ... don't worry about America.  Why we'll have a \"muner\" club a million years from now.\n[Second Panel]\nOkay, son.  I hope you're right.  In the long run, the people win...despite the crackpots.  Now you go get the rest of the \"muners\" and we'll all go out to the Lake.\n[Third Panel]\nY'know, I believe he IS right! As long as we have a real America, like our Founders planned, there will be \"muner\" clbus and many other groups of friends.  And if the Federal grabbers for power will just let us work out our own problems, race relations and a lot of other things will be happier again.",
+                                                 "users": {
+                                                      "@total": "1",
+                                                      "user": {
+                                                           "@isNaraStaff": "false",
+                                                           "@lastModified": "2017-09-14T01:22:20Z",
+                                                           "@user": "Pugsley07302",
+                                                           "@version": "1"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  {
+                                       "@id": "32621119",
+                                       "@objectSortNum": "5",
+                                       "technicalMetadata": {
+                                            "size": "4780885",
+                                            "mime": "image/jpeg",
+                                            "height": "4009 pixels",
+                                            "width": "2819 pixels",
+                                            "orientation": "Top, left side (Horizontal / normal)",
+                                            "software": "Adobe Photoshop CS6 (Windows)"
+                                       },
+                                       "file": {
+                                            "@mime": "image/jpeg",
+                                            "@name": "LAcomic_005.jpg",
+                                            "@path": "content/dc-metro/rg-012/573507/LAcomic_005.jpg",
+                                            "@type": "primary",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/content/dc-metro/rg-012/573507/LAcomic_005.jpg"
+                                       },
+                                       "thumbnail": {
+                                            "@mime": "image/jpeg",
+                                            "@path": "opa-renditions/thumbnails/LAcomic_005.jpg-thumb.jpg",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/thumbnails/LAcomic_005.jpg-thumb.jpg"
+                                       },
+                                       "imageTiles": {
+                                            "@path": "opa-renditions/image-tiles/LAcomic_005.jpg.dzi",
+                                            "@url": "https://catalog.archives.gov/OpaAPI/media/29915359/opa-renditions/image-tiles/LAcomic_005.jpg.dzi"
+                                       },
+                                       "publicContributions": {
+                                            "transcription": {
+                                                 "@lastModified": "2017-09-14T01:24:32Z",
+                                                 "@version": "1",
+                                                 "text": "Let's have the kind of \nConstitutional Government our founders planned\n\nI Study the U.S. Constitution\nII Register ... And Vote.\nIII Elect GOOD Americans\nIV Tell Them that We, the People, must Govern Ourselves.\n\nFor additional copes write to the Louisiana State Sovereignty Commission, State Capitol, Baton Rouge, LA.",
+                                                 "users": {
+                                                      "@total": "1",
+                                                      "user": {
+                                                           "@isNaraStaff": "false",
+                                                           "@lastModified": "2017-09-14T01:24:32Z",
+                                                           "@user": "Pugsley07302",
+                                                           "@version": "1"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  }
+                             ]
+                        },
+                        "publicContributions": {
+                             "tags": {
+                                  "@total": "2",
+                                  "tag": [
+                                       {
+                                            "@created": "2017-07-06T23:41:39Z",
+                                            "@isNaraStaff": "false",
+                                            "@user": "Pugsley07302",
+                                            "$": "Civics"
+                                       },
+                                       {
+                                            "@created": "2017-07-06T23:41:48Z",
+                                            "@isNaraStaff": "false",
+                                            "@user": "Pugsley07302",
+                                            "$": "Constitution"
+                                       }
+                                  ]
+                             }
+                        }
+                   },
+                   {
+                        "num": "9",
+                        "score": 0.03325113,
+                        "type": "description",
+                        "naId": "4754870",
+                        "description": {
+                             "fileUnit": {
+                                  "accessRestriction": {
+                                       "status": {
+                                            "naId": "10031403",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "dataControlGroup": {
+                                       "groupCd": "RDTP2",
+                                       "groupId": "ou=RDTP2,ou=groups"
+                                  },
+                                  "generalRecordsTypeArray": {
+                                       "generalRecordsType": {
+                                            "naId": "10035676",
+                                            "termName": "Textual Records"
+                                       }
+                                  },
+                                  "isUnderEdit": "false",
+                                  "naId": "4754870",
+                                  "physicalOccurrenceArray": {
+                                       "fileUnitPhysicalOccurrence": {
+                                            "copyStatus": {
+                                                 "naId": "10031434",
+                                                 "termName": "Preservation-Reproduction-Reference"
+                                            },
+                                            "referenceUnitArray": {
+                                                 "referenceUnit": {
+                                                      "mailCode": "RDT2",
+                                                      "name": "National Archives at College Park - Textual Reference",
+                                                      "address1": "National Archives at College Park",
+                                                      "address2": "8601 Adelphi Road",
+                                                      "city": "College Park",
+                                                      "state": "MD",
+                                                      "postCode": "20740-6001",
+                                                      "phone": "301-837-3510",
+                                                      "fax": "301-837-1752",
+                                                      "email": "Archives2reference@nara.gov",
+                                                      "naId": "33",
+                                                      "termName": "National Archives at College Park - Textual Reference"
+                                                 }
+                                            },
+                                            "locationArray": {
+                                                 "location": {
+                                                      "facility": {
+                                                           "naId": "10048491",
+                                                           "termName": "National Archives at College Park - Archives II (College Park, MD)"
+                                                      }
+                                                 }
+                                            },
+                                            "mediaOccurrenceArray": {
+                                                 "mediaOccurrence": {
+                                                      "containerId": "1535",
+                                                      "specificMediaType": {
+                                                           "naId": "10048756",
+                                                           "termName": "Paper"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "recordHistory": {
+                                       "changed": {
+                                            "modification": {
+                                                 "dateTime": "2010-06-25T00:00:00"
+                                            }
+                                       },
+                                       "created": {
+                                            "dateTime": "2010-06-25T00:00:00"
+                                       }
+                                  },
+                                  "recordKey": "4817500",
+                                  "title": "Other -- Why We Fight Series",
+                                  "useRestriction": {
+                                       "status": {
+                                            "naId": "10675400",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "itemCount": "0",
+                                  "itemAvCount": "0",
+                                  "parentSeries": {
+                                       "naId": "921959",
+                                       "title": "Correspondence Regarding Film Production",
+                                       "inclusiveDates": {
+                                            "inclusiveEndDate": {
+                                                 "year": "1945",
+                                                 "logicalDate": "1945-12-31T00:00:00"
+                                            },
+                                            "inclusiveStartDate": {
+                                                 "month": "9",
+                                                 "year": "1943",
+                                                 "logicalDate": "1943-09-01T00:00:00"
+                                            }
+                                       },
+                                       "parentRecordGroup": {
+                                            "naId": "535",
+                                            "title": "Records of the Office of War Information",
+                                            "recordGroupNumber": "208",
+                                            "inclusiveDates": {
+                                                 "inclusiveEndDate": {
+                                                      "year": "1951",
+                                                      "logicalDate": "1951-12-31T00:00:00"
+                                                 },
+                                                 "inclusiveStartDate": {
+                                                      "year": "1926",
+                                                      "logicalDate": "1926-01-01T00:00:00"
+                                                 }
+                                            }
+                                       },
+                                       "creatingOrganizationArray": {
+                                            "creatingOrganization": {
+                                                 "creator": {
+                                                      "naId": "10453235",
+                                                      "termName": "Office for Emergency Management. Office of War Information. Domestic Operations Branch. Bureau of Motion Pictures. Theatrical Division. 1943-9/15/1945",
+                                                      "establishDate": {
+                                                           "year": "1943",
+                                                           "logicalDate": "1943-01-01T00:00:00"
+                                                      },
+                                                      "abolishDate": {
+                                                           "year": "1945",
+                                                           "month": "9",
+                                                           "day": "15",
+                                                           "logicalDate": "1945-09-15T00:00:00"
+                                                      }
+                                                 },
+                                                 "creatorType": {
+                                                      "naId": "10031465",
+                                                      "termName": "Most Recent"
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "variantControlNumberArray": {
+                                       "variantControlNumber": {
+                                            "number": "NC 148 288",
+                                            "type": {
+                                                 "naId": "10675882",
+                                                 "termName": "HMS/MLR Entry Number"
+                                            }
+                                       }
+                                  }
+                             }
+                        }
+                   },
+                   {
+                        "num": "10",
+                        "score": 0.03325113,
+                        "type": "description",
+                        "naId": "590328",
+                        "description": {
+                             "fileUnit": {
+                                  "accessRestriction": {
+                                       "status": {
+                                            "naId": "10031403",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "dataControlGroup": {
+                                       "groupCd": "RDTP2",
+                                       "groupId": "ou=RDTP2,ou=groups"
+                                  },
+                                  "generalRecordsTypeArray": {
+                                       "generalRecordsType": {
+                                            "naId": "10035676",
+                                            "termName": "Textual Records"
+                                       }
+                                  },
+                                  "isUnderEdit": "false",
+                                  "naId": "590328",
+                                  "physicalOccurrenceArray": {
+                                       "fileUnitPhysicalOccurrence": {
+                                            "copyStatus": {
+                                                 "naId": "10031434",
+                                                 "termName": "Preservation-Reproduction-Reference"
+                                            },
+                                            "referenceUnitArray": {
+                                                 "referenceUnit": {
+                                                      "mailCode": "RDT2",
+                                                      "name": "National Archives at College Park - Textual Reference",
+                                                      "address1": "National Archives at College Park",
+                                                      "address2": "8601 Adelphi Road",
+                                                      "city": "College Park",
+                                                      "state": "MD",
+                                                      "postCode": "20740-6001",
+                                                      "phone": "301-837-3510",
+                                                      "fax": "301-837-1752",
+                                                      "email": "Archives2reference@nara.gov",
+                                                      "naId": "33",
+                                                      "termName": "National Archives at College Park - Textual Reference"
+                                                 }
+                                            },
+                                            "locationArray": {
+                                                 "location": {
+                                                      "facility": {
+                                                           "naId": "10048491",
+                                                           "termName": "National Archives at College Park - Archives II (College Park, MD)"
+                                                      }
+                                                 }
+                                            },
+                                            "mediaOccurrenceArray": {
+                                                 "mediaOccurrence": {
+                                                      "containerId": "Box 42",
+                                                      "specificMediaType": {
+                                                           "naId": "10048756",
+                                                           "termName": "Paper"
+                                                      }
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "recordHistory": {
+                                       "changed": {
+                                            "modification": {
+                                                 "dateTime": "2004-08-05T00:00:00"
+                                            }
+                                       },
+                                       "created": {
+                                            "dateTime": "2004-05-27T00:00:00"
+                                       }
+                                  },
+                                  "recordKey": "591658",
+                                  "title": "Why We Fight:  Orientation of Korea, May 1951",
+                                  "useRestriction": {
+                                       "status": {
+                                            "naId": "10675400",
+                                            "termName": "Unrestricted"
+                                       }
+                                  },
+                                  "itemCount": "0",
+                                  "itemAvCount": "0",
+                                  "parentSeries": {
+                                       "naId": "578172",
+                                       "title": "Organizational History Files",
+                                       "inclusiveDates": {
+                                            "inclusiveEndDate": {
+                                                 "year": "1973",
+                                                 "logicalDate": "1973-12-31T00:00:00"
+                                            },
+                                            "inclusiveStartDate": {
+                                                 "year": "1959",
+                                                 "logicalDate": "1959-01-01T00:00:00"
+                                            }
+                                       },
+                                       "parentRecordGroup": {
+                                            "naId": "560364",
+                                            "title": "Records of the U.S. Army, Pacific",
+                                            "recordGroupNumber": "550",
+                                            "inclusiveDates": {
+                                                 "inclusiveEndDate": {
+                                                      "year": "1984",
+                                                      "logicalDate": "1984-12-31T00:00:00"
+                                                 },
+                                                 "inclusiveStartDate": {
+                                                      "year": "1945",
+                                                      "logicalDate": "1945-01-01T00:00:00"
+                                                 }
+                                            }
+                                       },
+                                       "formerRecordGroupArray": {
+                                            "recordGroup": {
+                                                 "naId": "651",
+                                                 "title": "Records of U.S. Army Operational, Tactical, and Support Organizations (World War II and Thereafter)",
+                                                 "recordGroupNumber": "338"
+                                            }
+                                       },
+                                       "creatingOrganizationArray": {
+                                            "creatingOrganization": {
+                                                 "creator": {
+                                                      "naId": "10447598",
+                                                      "termName": "Department of Defense. Department of the Army. U.S. Army Pacific. Office of the Deputy Chief of Staff for Operations. Military History Office. 1/1959-12/31/1974",
+                                                      "establishDate": {
+                                                           "year": "1959",
+                                                           "month": "1",
+                                                           "logicalDate": "1959-01-01T00:00:00"
+                                                      },
+                                                      "abolishDate": {
+                                                           "year": "1974",
+                                                           "month": "12",
+                                                           "day": "31",
+                                                           "logicalDate": "1974-12-31T00:00:00"
+                                                      }
+                                                 },
+                                                 "creatorType": {
+                                                      "naId": "10031465",
+                                                      "termName": "Most Recent"
+                                                 }
+                                            }
+                                       }
+                                  },
+                                  "variantControlNumberArray": {
+                                       "variantControlNumber": {
+                                            "number": "A1 1",
+                                            "type": {
+                                                 "naId": "10675882",
+                                                 "termName": "HMS/MLR Entry Number"
+                                            }
+                                       }
+                                  }
+                             }
+                        }
+                   }
+              ]
+         }
+    }
+}

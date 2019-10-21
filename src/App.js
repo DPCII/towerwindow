@@ -19,7 +19,11 @@ function App() {
 
   // Handler for selecting option from Searchmenu
   // const handleSearchSelection = (a, b) => setVid({vid: a, player: b})
-  const handleSearchSelection = (a, b) => setVid({vid: a, player: b})
+  const handleSearchSelection = (a, b) => {
+    setVid({vid: a, player: b}) 
+    setNavStatus(a => !a)
+           
+  }
   //
 
   // React Spring for navmenu
@@ -47,16 +51,16 @@ function App() {
 
 
   // play state allows us to determine whether or not popup ads should be killed
-  function playbackPause(event) {
-    togglePlayState()
-  }
-  function playbackPlay(event) {
-    togglePlayState()
-  }
+  // function playbackPause(event) {
+  //   togglePlayState()
+  // }
+  // function playbackPlay(event) {
+  //   togglePlayState()
+  // }
 
-  function togglePlayState() {
-    hide ? setHide(false) : setHide(true)
-  }
+  // function togglePlayState() {
+  //   hide ? setHide(false) : setHide(true)
+  // }
   // play state
 
 
@@ -71,8 +75,8 @@ function App() {
                     opts={optionsForVideo}
                     onReady={playbackReady}
                     onEnd={playbackEnd}
-                    onPause={playbackPause}
-                    onPlay={playbackPlay}
+                    // onPause={playbackPause}
+                    // onPlay={playbackPlay}
                   />
 
               </div>
@@ -86,6 +90,14 @@ function App() {
                   autoplay
                 />
               </div>
+    } else if(player === "national archives") {
+      return <div style={inlineCss} id="player">
+                <video width="640" autoPlay controls>
+                  <source src={ vid } type="video/mp4" />
+                  <source src={ vid } type="video/ogg" />
+                  {"Your browser does not support HTML5 video."}
+                </video>
+            </div>
     }
   }
 
