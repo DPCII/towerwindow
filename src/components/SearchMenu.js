@@ -37,7 +37,7 @@ export default function SearchMenu(props) {
                            return <EachResultContainer key={index} onClick={() => {props.sendSelection(el.resId, el.vid_player)}}> 
                                      <h4>{el.title}</h4>
                                      <EachResultContent >
-                                        <img alt={el.title} src={`http://img.youtube.com/vi/${el.resId}/3.jpg`}/>
+                                        <img alt={el.title} src={`http://img.youtube.com/vi/${el.resId}/0.jpg`} height="220"/>
                                         <EachResultDescription>{el.description}</EachResultDescription> 
                                      </EachResultContent>
                                   </EachResultContainer>
