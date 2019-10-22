@@ -17,12 +17,11 @@ function App() {
   const [hide, setHide] = useState({ hide: false })
   // state
 
-  // Handler for selecting option from Searchmenu
-  // const handleSearchSelection = (a, b) => setVid({vid: a, player: b})
+  // Handler for selecting option from Searchmenu. Also collapses the search menu.
+
   const handleSearchSelection = (a, b) => {
     setVid({vid: a, player: b}) 
     setNavStatus(a => !a)
-           
   }
   //
 
@@ -41,6 +40,7 @@ function App() {
   function playbackReady(event) {
     // event.target.pauseVideo();
     event.target.playVideo();
+
   }
   function playbackEnd(event) {
     setVid('')
@@ -51,9 +51,13 @@ function App() {
 
 
   // play state allows us to determine whether or not popup ads should be killed
-  // function playbackPause(event) {
-  //   togglePlayState()
-  // }
+  function playbackPause(event) {
+    let sheets = document.styleSheets;
+    console.log(sheets)
+    // togglePlayState()
+    // console.log(grabWindow)
+  }
+
   // function playbackPlay(event) {
   //   togglePlayState()
   // }
@@ -62,9 +66,8 @@ function App() {
   //   hide ? setHide(false) : setHide(true)
   // }
   // play state
-
-
-
+  
+  // let grabWindow;
 
   // renderWhichPlayer checks API response for which platform the video is coming from
   function renderWhichPlayer() {
@@ -75,8 +78,13 @@ function App() {
                     opts={optionsForVideo}
                     onReady={playbackReady}
                     onEnd={playbackEnd}
-                    // onPause={playbackPause}
+                    onPause={playbackPause}
                     // onPlay={playbackPlay}
+                    // ref={
+                    //   function(el) {
+                    //     grabWindow = el
+                    //   }
+                    // }
                   />
 
               </div>
@@ -178,5 +186,11 @@ const pausedCss = {
   let optionsForVideo =  {
     height: '390',
     width: '640',
+    playerVars: {
+      modestbranding: 1,
+      rel: 0,
+      iv_load_policy: 3,
+      'ytp-pause-overlay': '0',
+    }
   }
   //

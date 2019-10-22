@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: .1px 1px 4px -2px gray;
 }
 
 .header-title {
@@ -27,3 +28,16 @@
   overflow: scroll;
   overflow-x: auto;
 }
+
+/* div.ytp-pause-overlay ytp-scroll-min {
+  display: none !important;
+}
+
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none !important;
+} */
+
+/* div.ytp-pause-overlay.ytp-scroll-min {
+  display: none !important;
+  z-index: 0;
+} */

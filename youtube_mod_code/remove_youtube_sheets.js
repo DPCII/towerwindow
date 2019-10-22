@@ -1,7 +1,5 @@
 
-
-  let removeSidebar = true;
-  if (removeSidebar) {
+    function killSheets() {
     let sheets = document.styleSheets;
     let display_none = " { display: none !important; }";
 
@@ -24,5 +22,8 @@
     sheets[0].insertRule("li.video-list-item.related-list-item" + display_none); 
     sheets[0].insertRule("h4.watch-sidebar-head" + display_none); 
     sheets[0].insertRule("hr.watch-sidebar-separation-line" + display_none); 
-    sheets[0].insertRule("button#watch-more-related-button" + display_none); 
+    sheets[0].insertRule("button#watch-more-related-button" + display_none);
+    sheets[0].insertRule("div.ytp-pause-overlay.ytp-scroll-min" + display_none);
+
+
   }

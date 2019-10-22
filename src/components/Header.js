@@ -20,6 +20,8 @@ const NavHeader = styled.nav`
     width: 100vw;
     box-sizing: border-box;
     background-color: whitesmoke;
+    box-shadow: .5px .1px 5px .1px gray;
+    margin-bottom: 10px;
 `;
 
 const Logo = styled.img`

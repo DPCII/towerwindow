@@ -1,6 +1,9 @@
 // query was https://catalog.archives.gov/api/v1?&q=why we fight&resultTypes=holding&format=json
 // Found streamable video footage in mp4 format. Testing necessary player setup.
 
+// Using this query: https://catalog.archives.gov/api/v1/?q=fulda&type=object&objects.object.technicalMetadata.fileSize=range(1000000,50000000)&rows=100
+// I could get 100 photos nested at opaResponse.results.result[index].objects.object.file.url
+
 {
     "opaResponse": {
          "@status": "200",

@@ -1,7 +1,7 @@
 function removeOverlays() {
     
     // Select the node that will be observed for mutations
-    var targetNode = document.getElementById("movie_player");
+    var targetNode = document.getElementById("player");
 
     // Options for the observer (observe child and its descendants for mutations as well as attribute changes in them)
     var overlayObserverConfiguration = { attributes: true, childList: true, subtree: true };
@@ -92,4 +92,8 @@ function removeOverlays() {
     }
 }
 
+
+
   removeOverlays()
+
+export default removeOverlays
