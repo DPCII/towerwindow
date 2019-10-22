@@ -1,11 +1,13 @@
 .App {
   text-align: center;
+  min-height: 550px;
 }
 
 .navmenu {
   background-color: whitesmoke;
   height: 80vh;
-  width: 90vw;
+  min-height: 500px;
+  width: 95vw;
   position: absolute;
   z-index: 2;
   display:flex;
@@ -28,16 +30,3 @@
   overflow: scroll;
   overflow-x: auto;
 }
-
-/* div.ytp-pause-overlay ytp-scroll-min {
-  display: none !important;
-}
-
-.ytp-expand-pause-overlay .ytp-pause-overlay {
-  display: none !important;
-} */
-
-/* div.ytp-pause-overlay.ytp-scroll-min {
-  display: none !important;
-  z-index: 0;
-} */
