@@ -11,7 +11,7 @@ export default function SearchMenu(props) {
     
     const handleSubmit = (evt) => {
         evt.preventDefault()
-        axios.get(`http://3.15.11.97:8000/?q=${input}`)
+        axios.get(`http://3.15.11.97:80/?q=${input}`)
         .then(result => setBackendRes([...result.data]))
         // .then(() => console.log({backendRes}))
         // .then(res => console.log(res.data))
