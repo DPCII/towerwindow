@@ -8,11 +8,11 @@ export default function Header(props) {
         <NavHeader>
             <LogoBox onClick={props.popnav} >
                 <Logo alt="window" src={window_logo}></Logo>
-                <span className="header-title">Tower Window</span>
+                <HeaderTitle>Tower Window</HeaderTitle>
             </LogoBox>
             <UserNavBox>
-                <span className="nav-buttons">Home</span>
-                <span className="nav-buttons">User</span>
+                <Button>Home</Button>
+                <Button>User</Button>
             </UserNavBox>
         </NavHeader>
     )
@@ -34,10 +34,21 @@ const NavHeader = styled.nav`
 const Logo = styled.img`
     height: 66px;
     width: auto;
+    position: relative;
+    transform-origin: center right;
+    transform-style: preserve-3d;
+    border-radius: 1px;
+    transform: perspective(400px) rotateY(0deg);
+
+    transition: transform .4s;  
+    &:hover {
+        transform: perspective(400px) rotateY(22deg);
+    }
 `;
 
 const LogoBox = styled.div`
-    width: 235px;
+    width: 255px;
+    padding: 0px 5px;
     height: inherit;
     margin-left: 2rem;
     display: flex;
@@ -52,4 +63,37 @@ const UserNavBox = styled.div`
     height: 30px;
     width: 170px;
     margin-left: auto;
+`;
+
+const Button = styled.div`
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: inherit;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: gainsboro;
+        cursor: pointer;
+    }
+`;
+
+const HeaderTitle = styled.span`
+    font-size: 1.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    padding: 8px;
+    background-color: inherit;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: gainsboro;
+        cursor: pointer;
+    }
+    
 `;
