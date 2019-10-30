@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tube-api-test/static/css/main.33b6e2a7.chunk.css",
-    "main.js": "/tube-api-test/static/js/main.27b977ac.chunk.js",
-    "main.js.map": "/tube-api-test/static/js/main.27b977ac.chunk.js.map",
+    "main.js": "/tube-api-test/static/js/main.54d7b135.chunk.js",
+    "main.js.map": "/tube-api-test/static/js/main.54d7b135.chunk.js.map",
     "runtime-main.js": "/tube-api-test/static/js/runtime-main.8a5726e1.js",
     "runtime-main.js.map": "/tube-api-test/static/js/runtime-main.8a5726e1.js.map",
     "static/js/2.ed85e5bd.chunk.js": "/tube-api-test/static/js/2.ed85e5bd.chunk.js",
     "static/js/2.ed85e5bd.chunk.js.map": "/tube-api-test/static/js/2.ed85e5bd.chunk.js.map",
     "index.html": "/tube-api-test/index.html",
-    "precache-manifest.b9eaa17be62cf8d725d228f26e09c8ed.js": "/tube-api-test/precache-manifest.b9eaa17be62cf8d725d228f26e09c8ed.js",
+    "precache-manifest.8f8a674fef99bb491722a4628d61103b.js": "/tube-api-test/precache-manifest.8f8a674fef99bb491722a4628d61103b.js",
     "service-worker.js": "/tube-api-test/service-worker.js",
     "static/css/main.33b6e2a7.chunk.css.map": "/tube-api-test/static/css/main.33b6e2a7.chunk.css.map",
     "static/media/window_logo.png": "/tube-api-test/static/media/window_logo.18aaeece.png"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8a5726e1.js",
     "static/js/2.ed85e5bd.chunk.js",
     "static/css/main.33b6e2a7.chunk.css",
-    "static/js/main.27b977ac.chunk.js"
+    "static/js/main.54d7b135.chunk.js"
   ]
 }
