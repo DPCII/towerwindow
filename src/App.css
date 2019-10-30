@@ -52,10 +52,11 @@
 
 .nav-buttons {
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   height: 25px;
-  position: relative;
-  bottom: -55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px 0 10px;
   text-transform: uppercase;
 }

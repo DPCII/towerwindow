@@ -11,7 +11,7 @@ export default function Header(props) {
                 <span className="header-title">Tower Window</span>
             </LogoBox>
             <UserNavBox>
-                <span className="nav-buttons">Introduction</span>
+                <span className="nav-buttons">Home</span>
                 <span className="nav-buttons">User</span>
             </UserNavBox>
         </NavHeader>
@@ -20,7 +20,7 @@ export default function Header(props) {
 
 
 const NavHeader = styled.nav`
-    height: 100px;
+    height: 72px;
     width: 100vw;
     background-color: whitesmoke;
     box-shadow: .5px .1px 5px .1px gray;
@@ -32,12 +32,12 @@ const NavHeader = styled.nav`
 `;
 
 const Logo = styled.img`
-    height: 80px;
+    height: 66px;
     width: auto;
 `;
 
 const LogoBox = styled.div`
-    width: 250px;
+    width: 235px;
     height: inherit;
     margin-left: 2rem;
     display: flex;
@@ -48,8 +48,8 @@ const LogoBox = styled.div`
 const UserNavBox = styled.div`
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin: 0 20px 0 10px;
-    height: 80px;
-    width: 200px;
+    margin: 0 40px 0 10px;
+    height: 30px;
+    width: 170px;
+    margin-left: auto;
 `;
