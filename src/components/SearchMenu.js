@@ -11,7 +11,7 @@ export default function SearchMenu(props) {
     
     const handleSubmit = (evt) => {
         evt.preventDefault()
-        axios.get(`http://ec2-18-188-143-30.us-east-2.compute.amazonaws.com:8000/?q=${input}`)
+        axios.get(`https://gentle-anchorage-04302.herokuapp.com/?q=${input}`)
         .then(result => setBackendRes([...result.data]))
         // .then(() => console.log({backendRes}))
         // .then(res => console.log(res.data))
