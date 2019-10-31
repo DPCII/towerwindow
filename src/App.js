@@ -5,6 +5,7 @@ import Header from './components/Header';
 import SearchMenu from './components/SearchMenu'
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
+import fireplace_background from './images/background_tw.jpg'
 import './App.css';
 
 function App() {
@@ -25,11 +26,14 @@ function App() {
   }
   //
 
+
+
   // React Spring for navmenu
   const [navStatus, setNavStatus] = useState(false);
+
   const cssPropsAnim = useSpring({
     opacity: navStatus ? 1 : .5,
-    marginLeft: navStatus ? 0 : -1200
+    marginLeft: navStatus ? 0 : -1200,
   })
 
   const handleNavClick = () => setNavStatus(a => !a)
@@ -109,6 +113,15 @@ function App() {
     }
   }
 
+  const HomePackage = 
+  <Home>
+    <h3>Welcome to Tower Window</h3>
+    <HomeText>
+      Our goal is to reference quality content across all domains of interest with as little impact from behavior modifying algorithms as possible. Click on the title at the top left to get started.
+    </HomeText>
+    <img alt="reading by the fireplace" src={fireplace_background} height="125px"></img>
+  </Home>
+
 
   let display;
 
@@ -118,13 +131,10 @@ function App() {
                 </div>
   } else {
     display = <div>
-                {renderWhichPlayer() || <div style={inlineCss}>Open the menu to search for content...</div>}
+                {renderWhichPlayer() || {...HomePackage}}
               </div>
 
   }
-
-
-
 
   // renderWhichPlayer
 
@@ -156,6 +166,27 @@ function App() {
 }
 
 export default App;
+
+const Home = styled.div`
+  height: 70vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  /* background-color: green; */
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 4rem 0 0 0;
+`;
+
+const HomeText = styled.p`
+  height: auto;
+  width: 40vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+`;
 
 // temp storage of CSS
 const inlineCss = {

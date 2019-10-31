@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import styled from 'styled-components';
+import { AnchorButton, Button, ButtonGroup } from '@blueprintjs/core';
 import SubjectTab from './SubjectTab';
 import ResearchTab from './ResearchTab';
 import '../App.css'
@@ -34,7 +35,7 @@ export default function SearchMenu(props) {
         if(menuView === 0) {
         return  <div className="search-tab"> {/* This is the Search view*/}
                         <form onSubmit={handleSubmit}>
-                            <input 
+                            <input type="search"
                             placeholder="Search for content by keywords..."
                             className="search-input"
                             onChange={(evt)=>setInput(evt.target.value)}
@@ -44,7 +45,8 @@ export default function SearchMenu(props) {
                             {
                                 !backendRes.length > 0 ?
                                 (
-                                    <h1>Search results will show here</h1>
+                                    // <h3>Search results will show here</h3>
+                                    null
                                 )
                                 :
                                 (
@@ -79,16 +81,25 @@ export default function SearchMenu(props) {
     return (
 
         <div className="navmenu">
-            <SearchMenuTabs>
+            <ButtonGroup fill={true} large={true} style={buttonsStyle}>
+                <Button onClick={() => handleSearchTabs(0)}>Search</Button>
+                <Button onClick={() => handleSearchTabs(1)}>Subjects</Button>
+                <AnchorButton onClick={() => handleSearchTabs(2)}>Research</AnchorButton>
+            </ButtonGroup>
+            {/* <SearchMenuTabs>
                 <span className="menu-tab" onClick={() => handleSearchTabs(0)}>Search</span>
                 <span className="menu-tab" onClick={() => handleSearchTabs(1)}>Subjects</span>
                 <span className="menu-tab" onClick={() => handleSearchTabs(2)}>Research</span>
-            </SearchMenuTabs>
+            </SearchMenuTabs> */}
         {renderSearchMenu()}
 
         </div>
         
     )
+}
+
+const buttonsStyle = {
+    width: "60%",
 }
 
 const EachResultContainer = styled.div`
@@ -112,7 +123,7 @@ const EachResultContent = styled.div`
 
 const EachResultDescription = styled.p`
     padding: 2rem;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 `;
 
 const SearchMenuTabs = styled.div`

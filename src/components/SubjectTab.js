@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
 export default function SubjectTab() {
     return (
-        <div>
+        <SubjectTabWrapper>
             <p>Subjects here.</p>
-        </div>
+        </SubjectTabWrapper>
     )
 }
+
+const SubjectTabWrapper = styled.div`
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
