@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { Button } from '@blueprintjs/core';
 import '../App.css'
 
+// Because views are currently based on videos and whether or not the video player state is empty, the home button just empties the video player state to return us home. This will need refactoring with a proper state manager and router.
+
 export default function Header(props) {
     return (
         <NavHeader>
@@ -12,10 +14,12 @@ export default function Header(props) {
                 <HeaderTitle>Tower Window</HeaderTitle>
             </LogoBox>
             <UserNavBox>
-                <Button className="bp3-button" type="button">Home</Button>
+                <Button className="bp3-button" type="button" onClick={() => props.sendSelection('', '')}>Home</Button>
                 <Button className="bp3-button" type="button">User</Button>
             </UserNavBox>
         </NavHeader>
+
+
     )
 }
 

@@ -141,7 +141,7 @@ function App() {
 // determines which type of content should be played. If no content is playing, can reopen nav bar
   return ( 
     <div>
-        <Header popnav={handleNavClick}></Header>
+        <Header popnav={handleNavClick} sendSelection={handleSearchSelection}></Header>
         { // Spring animation for side sliding nav 
           !navStatus ?
           (
