@@ -123,7 +123,8 @@ const EachResultContent = styled.div`
 
 const EachResultDescription = styled.p`
     padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
 `;
 
 const SearchMenuTabs = styled.div`

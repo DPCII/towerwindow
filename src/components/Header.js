@@ -26,7 +26,7 @@ export default function Header(props) {
 
 const NavHeader = styled.nav`
     height: 57px;
-    width: 100vw;
+    max-width: 100vw;
     background-color: whitesmoke;
     box-shadow: .5px .1px 5px .1px gray;
     margin-bottom: 10px;
